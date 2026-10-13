@@ -1,0 +1,721 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title> СДЭК для интернет-магазинов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="07ac147c1799191b14.css">
+  <link rel="stylesheet" href="cda091f33c59baf818.css">
+  <link rel="stylesheet" href="0028e38318685cd1f0.css">
+<meta name='robots' content='max-image-preview:large' />
+
+		
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+		
+		
+
+		
+	<link rel="icon" href="21e19874cca44c1cb8.png" sizes="32x32" />
+<link rel="icon" href="3b63fe2d5fcefc676d.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="cacdfac58f8bce5ca1.png" />
+
+</head>
+
+<body>
+
+  <header id="header">
+	<div class="container">
+	  <a href="8e296da3fef8d1d66b.html"><div class="logo"></div></a>
+
+	  <div class="menu-burger__header">
+		<span></span>
+	  </div>
+
+	  <nav class="header__nav">
+		<ul class="menu header__menu">
+		  <li><a href="../index.html#shops" class="menu__item">Интернет-магазинам</a></li>
+		  <li><a href="../index.html#calculator" class="menu__item">Тарифы</a></li>
+		  <li><a href="../index.html#features" class="menu__item">Почему СДЭК</a></li>
+		  <li><a href="../index.html#clients" class="menu__item">Отзывы</a></li>
+		  <li><a href="../index.html#steps" class="menu__item">Заключить договор</a></li>
+		  <li><a href="../index.html#footer" class="menu__item">Контакты</a></li>
+		</ul>
+	  </nav>
+
+	  <a href="tel:+79699992450" class="tel">
+		<span>+7 969 999-24-50</span>
+		<div class="tel-button">
+		  <div class="bg-phone"></div>
+		</div>
+	  </a>
+	</div>
+  </header>
+  <section id="hero">
+	<div class="container">
+	  <div class="hero-block">
+		<span class="header">Развивай интернет-магазин с помощью СДЭК</span>
+		<p>Специальные условия по доставке товаров в любую точку в мира, дополнительные услуги и сервис, хранение на складе и персональное обслуживание</p>
+		<hr>
+		<span class="more">Доставка от 110 рублей</span>
+	  </div>
+	</div>
+	<div class="man"></div>
+
+  </section>
+
+    <section id="calculator">
+        <div class="container">
+
+            <div class="header-block">
+                <h2>Калькулятор стоимости доставки</h2>
+            </div>
+
+            <form id="calc">
+                <div class="top-row">
+                    <div class="from">
+                        <label for="from">Откуда (выберите из списка)</label>
+                        <input type="text" id="from" name="from" required>
+                    </div>
+                    <div class="to">
+                        <label for="to">Куда (выберите из списка)</label>
+                        <input type="text" id="to" name="to" required>
+                    </div>
+                </div>
+                <div class="param">Параметры груза</div>
+                <div class="rep-blocks">
+                    <div class="params-rep">
+                        <div class="weight">
+                            <label for="weight">Вес (кг)</label>
+                            <input type="text" id="weight" name="weight[]" required>
+                        </div>
+                        <div class="length">
+                            <label for="length">Длина (см)</label>
+                            <input type="text" id="length" name="length[]" required>
+                        </div>
+                        <div class="width">
+                            <label for="width">Ширина (см)</label>
+                            <input type="text" id="width" name="width[]" required>
+                        </div>
+                        <div class="height">
+                            <label for="height">Высота (см)</label>
+                            <input type="text" id="height" name="height[]" required>
+                        </div>
+                        <a class="remove-row" style="position: absolute;">✖</a>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <div class="descr">
+                        <label for="descr">Описание груза</label>
+                        <textarea id="descr" name="description[]"></textarea>
+                    </div>
+                    <div class="add">
+                        <label>Добавить ещё место</label>
+                        <div class="add-block">
+                            <div class="bg-add"></div>
+                            <p style="display: none;">Добавить</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="action">
+                    <input class="green-button" type="submit" value="Рассчитать стоимость">
+                </div>
+                <input type="hidden" name="hidden-from" value="">
+                <input type="hidden" name="hidden-to" value="">
+            </form>
+
+            <div class="table-result" style="display: none;">
+                <div class="tariffs">
+                    <p>Тарифы без договора</p>
+                    <table>
+                        <tr>
+                            <th class="t-delivery">Доставка</th>
+                            <th>Стоимость</th>
+                            <th>Сроки</th>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tariffs-shop">
+                    <p>Тарифы для интернет-магазина</p>
+                    <table>
+                        <tr>
+                            <th class="t-delivery">Доставка</th>
+                            <th>Стоимость</th>
+                            <th>Сроки</th>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="t-delivery">Экспресс дверь-дверь</td>
+                            <td>600</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="services">
+	<div class="container">
+
+	  <div class="header-block">
+		<h2>Сервис для ваших Покупателей</h2>
+		<hr>
+		<p>С помощью наших услуг вы сможете предложить своим клиентам более широкий и качественный сервис, а значит увеличить свои продажи.</p>
+	  </div>
+
+	  <div class="services-blocks">
+
+		<div class="services-block">
+		  <div class="bg-delivery icon"></div>
+		  <div class="service-content">
+			<h3>Доставка</h3>
+			<p>На выбор для Покупателя: курьер, пункт выдачи заказов, постамат. А это значит ваш клиент будет доволен!</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-pay icon"></div>
+		  <div class="service-content">
+			<h3>Оплата при получении</h3>
+			<p>Оплата за товар как наличными, картой или через QR-код. Комиссия за наложенный платеж всего 3%. Больше клиентов решится сделать заказ на вашем сайте.</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-half_delivery icon"></div>
+		  <div class="service-content">
+			<h3>Частичная доставка</h3>
+			<p>Предложите покупателям несколько товаров на выбор с примеркой дома или в ПВЗ. Согласитесь ведь один из них он точно купит.</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-cost icon"></div>
+		  <div class="service-content">
+			<h3>Стоимость доставки</h3>
+			<p>Вы сами выбираете брать деньги за доставку с Покупателя или доставить ему бесплатно.</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-return icon"></div>
+		  <div class="service-content">
+			<h3>Возврат товара</h3>
+			<p>Мы готовы взять на себя и доставку клиентского возврата. Это тоже часть бизнеса и без этого не построишь интернет-продаж.</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-calendar icon"></div>
+		  <div class="service-content">
+			<h3>Сроки доставки</h3>
+			<p>Мы знаем на сколько они важны, поэтому предлагаем всегда на выбор несколько тарифов (побыстрее или подешевле).</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-check icon"></div>
+		  <div class="service-content">
+			<h3>Чеки</h3>
+			<p>Вне зависимости от способа доставки Получатель при оплате получит от нас чек. И вам не нужно использовать кассовую технику.</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-storage icon"></div>
+		  <div class="service-content">
+			<h3>Хранение на складе</h3>
+			<p>14 дней мы храним посылки в наших отделениях бесплатно. Покупатель за этот срок сам выбирает время, когда ему удобно забрать посылку в ПВЗ.</p>
+		  </div>
+		</div>
+
+		<div class="services-block">
+		  <div class="bg-reverse icon"></div>
+		  <div class="service-content">
+			<h3>Реверс</h3>
+			<p>Доставим груз Получателю, подпишем ваши документы и вернем их Вам.</p>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+  </section>
+
+  <section id="shops">
+	<div class="container">
+
+	  <div class="header-block">
+		<h2>Интернет-магазинам</h2>
+		<hr>
+		<p>Большинство наших дополнительных услуг абсолютно бесплатно.</p>
+	  </div>
+
+	  <div class="shop-blocks">
+
+
+<div class="shop-block">
+	  <div class="bg-check_mark icon"></div>
+	  <h3>Личный кабинет</h3>
+	  <p>Создание накладных, самостоятельный выбор тарифов по цене и срокам, отслеживание заказов, документооборот, удобный интерфейс.</p>
+	</div>
+	
+<div class="shop-block">
+	  <div class="bg-check_mark icon"></div>
+	  <h3>Электронный документооборот</h3>
+	  <p>Счета, акты оказанных услуг, акты сверки - все это можно получить в бесплатно с помощью электронного документооборота. Ни один документ не потеряется и всегда будет под рукой.</p>
+	</div>	
+	
+<div class="shop-block ">
+	  <div class="bg-check_mark icon"></div>
+	  <h3>Бесплатная упаковка</h3>
+	  <p>Предоставляем пакеты формата А4, А3 и картонные конверты.</p>
+	</div>	
+	
+	<div class="shop-block">
+		  <div class="bg-check_mark icon"></div>
+		  <h3>СМС-уведомления</h3>
+		  <p>Все клиенты получают бесплатное СМС уведомление от компании СДЭК о поступлении товара на ПВЗ.</p>
+		</div>
+		
+	<div class="shop-block">
+		  <div class="bg-check_mark icon"></div>
+		  <h3>Забор груза</h3>
+		  <p>Если у много посылок в день, но вы не хотите ехать к нам в отделение, мы сами приедем к вам и отвезем к себе на склад. При этом вы экономите на доставке.</p>
+		</div>	
+		
+		
+		<div class="shop-block">
+		  <div class="bg-check_mark icon"></div>
+		  <h3>Интеграция API</h3>
+			<p>Автоматизация бизнес-процессов;</p>
+			<p>Простое техническое решение и автообновление;</p>
+			<p>Прозрачность процесса и информированность участников, повышение лояльности со стороны покупателей интернет-магазина;</p>
+			<p>Увеличение дохода клиента.</p>
+		</div>
+		
+		<div class="shop-block adapt">
+			  <div class="bg-check_mark icon"></div>
+			  <h3>Фулфилмент</h3>
+			  <p>Сокращаем срок и стоимость доставки. Вы экономите на аренде своего склада, найме, обучении и выплате з/п сотрудников.</p>
+			  <p>Наши склады находятся в Москве, Санкт-Петербурге, Екатеринбурге, Новосибирске, Нур-Султан (Астана) Казахстане, Краснодаре, Тюмени, Уфе, Хабаровске, Красноярске.</p>
+			</div>
+		
+		<div class="shop-block adapt">
+			  <div class="bg-check_mark icon"></div>
+			  <h3>Страхование грузов</h3>
+			  <p>Ответственность за сохранность и порчу груза прописана в Регламенте оказания курьерских услуг (РОКУ). Стоимость страховки всего 0,75 % от объявленной стоимости.</p>
+			</div>
+		
+	<div class="shop-block adapt">
+		  <div class="bg-check_mark icon"></div>
+		  <h3>Ответственность за сроки доставки</h3>
+		  <p>В случае задержки сроков доставки СДЭК несет финансовую ответственность, это прописано в Регламенте оказания курьерских услуг (РОКУ).</p>
+		</div>
+	
+	<div class="shop-block adapt">
+		  <div class="bg-check_mark icon"></div>
+		  <h3>Платежи по Договору</h3>
+		  <p>Обязательные платежи отсутствуют. Вы платите только за оказанные услуги.</p>
+		</div>
+		
+
+<div class="shop-block adapt">
+  <div class="bg-check_mark icon"></div>
+  <h3>Регулярный перевод НП</h3>
+  <p>Все полученные наложенные платежи за ваши товары мы переводим на 5 рабочий день, с момента доставки, без задержки. Это позволяет вкладывать деньги в новые ресурсы для вашего бизнеса.</p>
+</div>
+		
+
+		<div class="shop-block adapt">
+		  <div class="bg-check_mark icon"></div>
+		  <h3>Выкупаемость заказов</h3>
+		  <p>Показатель выкупаемости 99,6%. СДЭК постоянно улучшает качество и своевременность доставки, что ведет к повышению выкупаемости товаров.</p>
+		</div>
+
+<div class="shop-block adapt">
+	  <div class="bg-check_mark icon"></div>
+	  <h3>Персональный менеджер</h3>
+	  <p>Не пустой звук, а человек к которому всегда можно обратиться за помощью в решении тех или иных возникших сложностях.</p>
+	</div>
+
+<div class="shop-block adapt">
+	  <div class="bg-check_mark icon"></div>
+	  <h3>Возврат</h3>
+	  <p>Все товары, которые невостребованные клиентом, мы вернем за 50% от стоимости доставки.</p>
+	</div>
+
+<div class="shop-block adapt">
+	  <div class="bg-check_mark icon"></div>
+	  <h3>СДЭК-МАРКЕТ</h3>
+	  <p>Позволяет получать дополнительный поток клиентов, без больших финансовых затрат. Достаточно загрузить файл с товарами.</p>
+	</div>
+		
+
+		<div class="shop-block adapt">
+		  <div class="bg-check_mark icon"></div>
+		  <h3>Персональные тарифы</h3>
+		  <p>Если у вас большой объем и вы хотите дополнительную скидку, то оставьте заявку и мы обсудим возможные персональные условия сотрудничества.</p>
+		</div>
+	  </div>
+
+
+	  <div class="b-more green-button">Показать ещё</div>
+	</div>
+  </section>
+
+  <section id="steps">
+	<div class="container">
+
+	  <div class="header-block">
+		<h2>3 простых шага для заключения договора</h2>
+	  </div>
+
+	  <div class="steps-arrow"></div>
+
+	  <div class="step1">
+		<div class="step-icon">
+		  <div class="num"><i>1</i></div>
+		  <div class="step-img bg-step1"></div>
+		</div>
+		<p>Заполните анкету</p>
+	  </div>
+
+	  <div class="step2">
+		<div class="step-icon">
+		  <div class="num"><i>2</i></div>
+		  <div class="step-img bg-step2"></div>
+		</div>
+		<p>Примите звонок и согласуйте условия</p>
+	  </div>
+
+	  <div class="step3">
+		<div class="step-icon">
+		  <div class="num"><i>3</i></div>
+		  <div class="step-img bg-step3"></div>
+		</div>
+		<p>Подпишите договор</p>
+	  </div>
+
+	<a target="_blank" href="5921b80dd429b94d98.html"><div class="yellow-button">Заполнить анкету</div></a>
+
+	</div>
+  </section>
+
+  <section id="features">
+	<div class="container">
+
+	  <div class="header-block">
+		<h2>Группа компаний СДЭК</h2>
+		<hr>
+		<p>Мы уже более 20 лет успешно работаем на рынке логистических услуг, постоянно совершенствуясь и внедряя новые технологии</p>
+	  </div>
+
+	  <div class="pie">
+		<div class="pie-parcel"><i>300.000</i>
+		  <p>посылок в день</p>
+		</div>
+		<div class="pie-clients"><i>1.5 млн. +</i>
+		  <p>активных клиентов</p>
+		</div>
+		<div class="pie-locality"><i>40.000</i>
+		  <p>населённых пунктов РФ</p>
+		</div>
+		<div class="pie-points"><i>3000</i>
+		  <p>уникальных пунктов выдачи в РФ</p>
+		</div>
+		<div class="pie-countries"><i>23</i>
+		  <p>страны мира</p>
+		</div>
+		<div class="pie-courier"><i>10.000</i>
+		  <p>курьеров</p>
+		</div>
+		<div class="pie-more">это более</div>
+	  </div>
+
+	  <div class="percents">
+
+		<div class="p-delivery">
+		  <i>96,6%</i>
+		  <p>своевременность доставки</p>
+		</div>
+		<div class="p-redemption">
+		  <i>86%</i>
+		  <p>процент выкупаемости</p>
+		</div>
+		<div class="p-growth">
+		  <i>35%</i>
+		  <p>прирост трафика ИМ после начала использования наложенного платежа</p>
+		</div>
+		<div class="p-widget">
+		  <i>12%</i>
+		  <p>прирост трафика после добавления виджета СДЭК на сайт</p>
+		</div>
+
+	  </div>
+
+	</div>
+  </section>
+
+  <section id="partners">
+	<div class="container">
+
+	  <div class="header-block">
+		<h2>С нами успешно развиваются</h2>
+	  </div>
+
+	  <div class="slider-block">
+		<div class="slider">
+		  <div class="slider-item">
+			<img alt="" src="9b900f32bc7fb9b1fa.png">
+		  </div>
+		  <div class="slider-item">
+			<img alt="" src="37a772dcfd57fc5c85.png">
+		  </div>
+		  <div class="slider-item">
+			<img alt="" src="0b7584a826259b32b8.png">
+		  </div>
+		  <div class="slider-item">
+			<img alt="" src="a5e05866134e615545.png">
+		  </div>
+		  <div class="slider-item">
+			<img alt="" src="9b900f32bc7fb9b1fa.png">
+		  </div>
+
+		</div>
+		<div class="slick-prev">
+		  <div class="bg-left"></div>
+		</div>
+		<div class="slick-next">
+		  <div class="bg-right"></div>
+		</div>
+	  </div>
+
+	</div>
+  </section>
+
+  <section id="clients">
+	<div class="container">
+
+	  <div class="header-block">
+		<h2>Клиенты о СДЭК</h2>
+	  </div>
+
+	  <div class="slider-block-video">
+		<div class="slider-video">
+		  <div class="slider-item-video">
+			<img alt="" src="52bba8c5eda4177503.jpg">
+			<a href="https://youtu.be/IeDXDbcnnho" data-lity>
+			  <div class="bg-play"></div>
+			</a>
+		  </div>
+		  <div class="slider-item-video">
+			<img alt="" src="6e6c0cb9e00e6dc836.jpg">
+			<a href="https://youtu.be/GWPQox5E694" data-lity>
+			  <div class="bg-play"></div>
+			</a>
+		  </div>
+		  <div class="slider-item-video">
+			<img alt="" src="41da673c0f27f94798.jpg">
+			<a href="https://youtu.be/uYZnm-GZUsk" data-lity>
+			  <div class="bg-play"></div>
+			</a>
+		  </div>
+		  <div class="slider-item-video">
+			<img alt="" src="c97b0fc4a882dca275.jpg">
+			<a href="https://youtu.be/nO_gDGGqi20" data-lity>
+			  <div class="bg-play"></div>
+			</a>
+		  </div>
+
+		</div>
+		<div class="video-prev">
+		  <div class="bg-left"></div>
+		</div>
+		<div class="video-next">
+		  <div class="bg-right"></div>
+		</div>
+	  </div>
+
+	  <div class="get-quiz">
+		<p>Пройди опрос и получи персональные условия сотрудничества <i>+ скидку 1500 р.</i></p>
+		<div class="button-right">
+		  <a target="_blank" href="0064697ae60e0f8400.html"><div class="yellow-button">Пройти опрос</div></a>
+		</div>
+	  </div>
+
+	</div>
+
+  </section>
+
+
+	<footer id="footer">
+    <div class="container">
+
+      <ul class="footer-menu">
+        <li><a href="../index.html#shops">Интернет-магазинам</a></li>
+        <li><a href="../index.html#calculator">Тарифы</a></li>
+        <li><a href="../index.html#features">Почему СДЭК</a></li>
+        <li><a href="../index.html#clients">Отзывы</a></li>
+        <li><a href="../index.html#steps">Заключить договор</a></li>
+        <li><a href="../index.html#footer">Контакты</a></li>
+      </ul>
+
+      <div class="links">
+        <ul>
+          <li><a target="_blank" href="0389460e0f9181ef25.pdf">Договор возмездного оказания курьерских услуг с приложениями</a></li>
+          <li><a target="_blank" href="d00416ec1830e029cf.pdf">Договор для Интернет магазинов с приложениями</a></li>
+          <li><a target="_blank" href="bdbf14f09aa9dbe244.pdf">Договор для самозанятых граждан с доп.соглашением</a></li>
+          <li><a target="_blank" href="26b3fa7488009dbf6f.pdf">Регламент возмездного оказания курьерских услуг действующий с 07.08.2020 (РОКУ)</a></li>
+          <li><a target="_blank" href="539b3e5b209615a1ac.pdf">Приложение № 1 к РОКУ. Услуги и условия их оказания</a></li>
+          <li><a target="_blank" href="c79fe59866832e76c1.pdf">Приложение № 2 к РОКУ. Отправления, запрещенные для передачи курьерской службе для доставки и/или хранения</a></li>
+          <li><a target="_blank" href="42a9c4378ec22f49bf.pdf">Приложение № 3 к РОКУ. Требования к упаковке отправлений</a></li>
+		  <li><a target="_blank" href="b57ab207aaa61c4741.pdf">Приложение № 4 к РОКУ. Формы накладных Исполнителя</a></li>
+          <li><a target="_blank" href="9ec6ddd87fc95a1a58.pdf">Приложение № 5 к РОКУ. Декларация безопасности отправления</a></li>
+        </ul>
+      </div>
+
+      <div class="contacts">
+        <div class="c-block address">
+          <div class="bg-address c-icon"></div>
+          <p class="c-head">Адрес офиса</p>
+          <p>г. Москва, Щелковское шоссе, д. 3, стр. 1</p>
+        </div>
+
+        <div class="c-block mail">
+          <div class="bg-mail c-icon"></div>
+          <p class="c-head">Почта</p>
+          <p><a class="mail-link" href="mailto:ds.yankin@cdek.ru">ds.yankin@cdek.ru</a></p>
+        </div>
+
+        <div class="c-block phone">
+          <div class="bg-phone_footer c-icon"></div>
+          <p class="c-head">Телефон</p>
+          <p>+7 (969) 9992450
+        </div>
+
+        <div class="c-block reg">
+          <div class="bg-reg c-icon"></div>
+          <p class="c-head">Регистрация</p>
+          <p>ОГРНИП 317774600581014</p>
+        </div>
+
+        <div class="brake"></div>
+
+        <div class="oferta">
+	  <p><a target="_blank" href="24fd9bca79f470c48f.html">Полезные материалы</a></p>
+          <p><a href="5d0b4773c217d8f9d7.html">Политика конфидициальности</a></p>
+          <p><a href="c7c9405b2a5525c149.html">Оферта</a></p>
+          <p>© 2000-2022</p>
+        </div>
+
+        <div class="cdek">
+          <p>Данный сайт был создан для заключения договоров со СДЭК</p>
+          <p><a target="_blank" href="https://cdek.ru/">www.cdek.ru</a></p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+		<style>
+			.autocomplete-suggestions {background: #fff; border: 1px solid #cccccc; overflow: hidden;}
+			.autocomplete-suggestions div {padding: 6px 10px; cursor: pointer;}
+			.autocomplete-suggestions div:hover {text-decoration: underline;}
+            /*.params-rep {display: grid; grid-area: params-rep}*/
+		</style>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<script src="c48f045dccc2854316.js" defer></script>
+<script src="6ca816e8803f64dc6a.js" defer></script>
+<script src="a17a49fa689f6e929f.js" defer></script>
+<script src="interface.js" defer></script>
+<script src="calculator.js" defer></script>
+</body>
+</html>
